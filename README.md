@@ -1,65 +1,95 @@
-# React and Redux
+# AWESOME-BOOKS | MODULE-II
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+> Math-magicians is simple application being built in our third module of our curriculum at microverse.
 
-## Set-up GitHub Actions
+### Features implemented so far are:
 
-This GitHub Action is going to run [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/) to help you find style issues.
+- Responsive HTML page
+- Set up a React app.
+- Use React documentation.
 
-[Stylelint](https://stylelint.io/) is a linter for your stylesheets that helps you avoid errors and enforce conventions.
+## Built With
 
-[ESLint](https://eslint.org/) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+- Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
+- ESlint (A mighty, modern linter that helps you avoid errors and enforce conventions in JavaScript codes)
+- Webpack (A JavaScript module bundler)
 
-Please do the following **steps in this order**:
+To get a local copy up and running follow these simple example steps.
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-    - **Remember** to use the file linked above
-    - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub Actions:
+### Prerequisites
 
-![gh actions checks](../assets/images/gh-actions-eslint-stylelint-checks.png)
+The basic requirements for building the executable are:
 
-Click on the `Details` link to see the full output and the errors that need to be fixed:
+- A working browser application (Google chrome, Mozilla Fire fox, Microsoft edge ...)
+- VSCode or any other equivalent code editor
+- Node Package Manager (For installing packages like Lighthous, webhint & stylelint used for checking for debugging bad codes before deployment)
 
-![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
+# Getting Started
 
-## Set-up linters in your local env
+#### Cloning the project
 
-### ESLint
+```
+git clone https://github.com/L2oukmane/Math-Magicians.git <Your-Build-Directory>
+```
 
-1. Run 
-    ```
-    npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x
-    ```
-    *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
-2. Copy [.eslintrc.json](./.eslintrc.json) and [.babelrc](./.babelrc) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx eslint .` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+### To get all package modules required to build the project run:
 
-### Stylelint
+```
+npm install
+```
 
-1. Run
+### Building
 
-   ```
-   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-   ```
+```
+npm run build
+```
 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+### Running
 
-2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+```
+npm started
+```
 
-## Test/Deployment Actions
+## Unit-Testing
 
-Feel free to add your own deployment actions which can run your tests and deploy to Heroku.
+You can find all of the unit test for testing all components in the src/**Test** folder located in the parent source directory of the project. you can create your own custom unit test and test it by running
 
-Make sure that you do not modify the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) but that you create a separe GitHub Action workflow file for that.
+```
+npm run test
+```
+
+##### from parent source directory
+
+## Getting packages and debuging with ESlint
+
+```
+ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+```
+
+##### For validation detection using Stylelint Run
+
+```
+npx eslint .
+```
+
+##### from parent source directory
+
+### Create React App
+
+```
+npx create-react-app my-app
+cd my-app
+npm start
+
+```
+
+##### from parent source directory
+
+## License
+
+All source code files are licensed under the permissive zlib license
+(http://opensource.org/licenses/Zlib) unless marked differently in a particular folder/file.
+
+## Author
+
+- **Oustani Loukmane** - [github](https://github.com/L2oukmane), [linkedin](https://www.linkedin.com/in/loukmane-oustani-221668211/), [twitter](https://twitter.com/LoukmaneOustani)
