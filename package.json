@@ -56,5 +56,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L2oukmane/Math-Magicians.git"
+  },
+  "bugs": {
+    "url": "https://github.com/L2oukmane/Math-Magicians/issues"
+  },
+  "homepage": "https://github.com/L2oukmane/Math-Magicians#readme"
 }
