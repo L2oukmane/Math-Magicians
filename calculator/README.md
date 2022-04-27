@@ -48,7 +48,7 @@ npm run build
 ### Running
 
 ```
-npm started
+npm start
 ```
 
 ## Unit-Testing
