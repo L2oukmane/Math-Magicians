@@ -29,6 +29,7 @@ button {
     grid-column: 1 / span 2;
   }
   
-  .bg-orange {
-    background-color: #f69510;
+  .bg-blue {
+    background-color: rgb(24, 44, 232);
+    color: white;
   }
