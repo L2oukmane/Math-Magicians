@@ -1,10 +1,16 @@
 import React from 'react';
 import './Calculator.css';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: 0,
+      next: null,
+      operation: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   render() {
